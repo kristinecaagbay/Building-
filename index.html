@@ -1,215 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font awesome link -->
-    <script src="https://kit.fontawesome.com/11d13cee1d.js" crossorigin="anonymous"></script>
-    <!-- Font awesome CDNJS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Material Icons Link -->
+    <!-- material icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Custom CSS -->
+    <!-- materialize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <!-- custom css -->
     <link rel="stylesheet" href="style.css">
     <title>Dashboard - Admin</title>
-
-
 </head>
+
 <body>
-    <!-- Navbar -->
     <div class="navbar-fixed">
         <nav class="white">
             <div class="nav-wrapper">
                 <div class="container">
                     <a href="" class="brand-logo black-text">Home</a>
-                        </ul>
-                            <ul>
-                                <ul class="right">
-                                    <li>
-                                        <a href="" class="black-text">
-                                            <i class="fa-solid fa-gear">
-                                            </i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </ul>
-                                <a href="" class="sidenav-trigger" data-target="mobile-demo">
-                                    <i class="fa-solid fa-bars black-text">
-                                    </i>
-                                </a>
-                                <ul class="right hide-on-med-and-down">
-                                    <li>
-                                        <a href="" class="black-text">Buy Now</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="black-text">
-                                            <i class="fa-solid fa-bell">      
-                                    </i>
-                                        </a>
-                                    </li>         
+                    <a href="#" data-target="slide-out" class="sidenav-trigger">
+                        <i class="fa-solid fa-bars black-text"></i>
+                    </a>
+                    <ul class="right">
+                        <li><a href="" class="black-text"><i class="fa-solid fa-gear"></i></a></li>
+                    </ul>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="" class="black-text">Buy Now</a></li>
+                        <li><a href="" class="black-text"><i class="fa-solid fa-bell"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </div>
 
-    <!-- Dashboard -->
-    <br>
+    <ul class="sidenav blue black-text" id="slide-out">
+        <div class="container">
+            <div class="row">
+                <div class="col s3">
+                    <h5 class="sidenav-logo"><i class="fa-brands fa-vaadin small"></i></h5>
+                </div>
+                <div class="col s9">
+                    <h5 class="sidenav-logo">Admin</h5>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header"><i class="material-icons right arrow-drop">arrow_drop_down</i>PAGES
+                </div>
+                <div class="collapsible-body">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns fa-lg"></i>Dashboard</a>
+                            <a href=""><i class="fa-regular fa-chart-bar fa-lg"></i>Fixed Chart</a>
+                            <a href=""><i class="fa-solid fa-table-cells-large fa-lg"></i>Grid</a>
+                            <a href=""><i class="fa-solid fa-message fa-lg"></i>Chat</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons right arrow-drop">arrow_drop_down</i>CHARTS
+                </div>
+                <div class="collapsible-body">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns fa-lg"></i>Line Charts</a>
+                            <a href=""><i class="fa-regular fa-chart-bar fa-lg"></i>Bar Charts</a>
+                            <a href=""><i class="fa-solid fa-table-cells-large fa-lg"></i>Area Charts</a>
+                            <a href=""><i class="fa-solid fa-message fa-lg"></i>Doughnut Charts</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </ul>
+
+
     <div class="container">
-        <h2> Dashboard</h2>
+
+        <!-- dashboard -->
+        <h2 class="dashboard-title"> Dashboard</h2>
         <div class="row">
             <div class="col s12 m6 l3">
-                <div class="card">
-
-                    <div class="card-panel">
-                        <h6 class="dashboard-title">Revenue</h6>
-                        <h5 class="card-value">$12, 476.00</h5>
-                        <span class="green-text">
-                            <i>
-                                <i class="fa-solid fa-chevron-up green-text">
-                                </i>
-                            </i>12%
-                        </span>
-                    </div>
+                <div class="card-panel">
+                    <h6>Revenue</h6>
+                    <p class="card-value">$12,476.00</p>
+                    <span class="green-text">
+                        <i class="fa-solid fa-angle-up"></i> 12%
+                    </span>
                 </div>
             </div>
             <div class="col s12 m6 l3">
                 <div class="card-panel">
-                    <h6 class="dashboard-title">Clicks</h6>
-                        <h5 class="card-value">11,893</h5>
-                        <span class="green-text">
-                            <i>
-                                <i class="fa-solid fa-chevron-up green-text">
-                                </i>
-                            </i>8%
-                        </span>
+                    <h6>Clicks</h6>
+                    <p class="card-value">11,893</p>
+                    <span class="green-text">
+                        <i class="fa-solid fa-angle-up"></i> 8%
+                    </span>
                 </div>
             </div>
             <div class="col s12 m6 l3">
                 <div class="card-panel">
-                    <h6 class="dashboard-title">Users</h6>
-                        <h5 class="card-value">230,648</h5>
-                        <span class="red-text">
-                            <i>
-                                <i class="fa-solid fa-chevron-down red-text">
-                                </i>
-                            </i>2%
-                        </span>
+                    <h6>Users</h6>
+                    <p class="card-value">230,648</p>
+                    <span class="red-text">
+                        <i class="fa-solid fa-angle-down"></i> 2%
+                    </span>
                 </div>
             </div>
             <div class="col s12 m6 l3">
                 <div class="card-panel">
-                    <h6 class="dashboard-title">Conversion Rate</h6>
-                        <h5 class="card-value">0.24%</h5>
-                        <span class="red-text">
-                            <i>
-                                <i class="fa-solid fa-chevron-down red-text">
-                                </i>
-                            </i>9%
-                        </span>
-            
+                    <h6>Conversion Rate</h6>
+                    <p class="card-value">0.24%</p>
+                    <span class="red-text">
+                        <i class="fa-solid fa-angle-down"></i> 9%
+                    </span>
                 </div>
             </div>
         </div>
 
-        <!-- Chart Panel -->
-        <div class="row center">
+        <!-- chart-panel -->
+        <div class="row">
             <div class="col s12">
                 <div class="card-panel">
-                    <div class="row">
+                    <div class="row center">
                         <div class="col s4">
-                            <h6 class="dashboard-title">Revenue</h6>
-                                <h5 class="card-value">$12, 476.00</h5>
-                                    <span>
-                                        <i>
-                                        <i class="fa-solid fa-chevron-up ">
-                                        </i>
-                                        </i>12%
-                                    </span> 
+                            <h6>Revenue</h6>
+                            <p class="card-value">$12,476.00</p>
+                            <span class="">
+                                <i class="fa-solid fa-angle-up"></i> 9%
+                            </span>
                         </div>
                         <div class="col s4">
-                            <h6 class="dashboard-title">Users</h6>
-                        <h5 class="card-value">2024</h5>
-                        <span>
-                            <i>
-                                <i class="fa-solid fa-chevron-up">
-                                </i>
-                            </i>9%
-                        </span>
+                            <h6>Users</h6>
+                            <p class="card-value">2024</p>
+                            <span class="">
+                                <i class="fa-solid fa-angle-up"></i> 9%
+                            </span>
                         </div>
                         <div class="col s4">
-                            <h6 class="dashboard-title">CTR</h6>
-                                <h5 class="card-value">0.20%</h5>
-                                    <span>
-                                        <i>
-                                        <i class="fa-solid fa-chevron-up ">
-                                        </i>
-                                        </i>4%
-                                    </span> 
+                            <h6>CTR</h6>
+                            <p class="card-value">0.20%</p>
+                            <span class="">
+                                <i class="fa-solid fa-angle-up"></i> 9%
+                            </span>
                         </div>
+
                         <div class="col s12">
-                            <div id="chartContainer" style="height: 370px; width: 100%;">
-                            </div>
-                            
+                            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-        <!-- Chart Updates -->
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card-panel">
-                        <div class="row">
-                            <div class="col s4">
-                                <h5>Updates</h5>
-                                <span class="red white-text">refund</span>
-                                <p>Chang</p>
-                                <span class="green white-text">purchased</span>
-                                <p>Chang</p>
-                                <span class="red white-text">refund</span>
-                                <p>Chang</p>
-                            </div>
-                            <div class="col s8">
-                                <br><br>
-                                <span>45$ refunded to Allan</span>
-                                <br>
-                                <p>14 minutes ago</p>
-                                
-                                <span>45$ refunded to Allan</span>
-                                <br>
-                                <p>14 minutes ago</p>
-                            
-                                <span>45$ refunded to Allan</span>
-                                <br>
-                                <p>14 minutes ago</p>
-                                
-                            </div>
+
+    <!-- Chart Updates -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card-panel">
+                    <div class="row">
+                        <div class="col s4">
+                            <h5>Updates</h5>
+                            <h6 class="custom-badge red black-text">refund</h6>
+                            <p>Chang</p>
+                            <h6 class="custom-badge green black-text">purchased</h6>
+                            <p>Chang</p>
+                            <h6 class="custom-badge red black-text">refund</h6>
+                            <p>Chang</p>
                         </div>
-                    </div>
-                    <div class="card-panel">
-                        <h5>Stacked Bar Chart</h5>
-                        <div class="card-panel z-depth-0">
-                            <img src="images/bar-graph.png" alt="" class="reponsive-img" >
+                        <div class="col s8">
+                            <br><br>
+                            <span>45$ refunded to Allan</span>
+                            <br>
+                            <p>14 minutes ago</p>
+
+                            <span>45$ refunded to Allan</span>
+                            <br>
+                            <p>14 minutes ago</p>
+
+                            <span>45$ refunded to Allan</span>
+                            <br>
+                            <p>14 minutes ago</p>
 
                         </div>
                     </div>
                 </div>
+
+                <div class="card-panel">
+                    <h5>Stacked Bar Chart</h5>
+                    <img src="images/bar-graph.png" alt="" class="responsive-img">
+                    <!-- <div id="chartContainer1" style="height: 370px; width: 100%;" class="card-panel z-depth-0"></div> -->
+                </div>
+            </div>
+
+            <div class="col s12 m6 card-panel z-depth-0">
+                <img src="images/line-chart.jpg " alt="" class="responsive-img">
+
+                <div class="card-panel">
+                    <img src="images/circle-chart.jpg" alt="" class="responsive-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div style="height: 100px"></div> -->
+
+    <footer class="page-footer white z-depth-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m3">
+                    <img class="responsive-img" src="//themes.materializecss.com/cdn/shop/t/1/assets/materialize-logo.png?v=179096390591197713681528499937" alt="Materialize">
+                    <p class="grey-text footer-text">Made with love by Materialize</p>
+                </div>
+                <div class="col s12 m3">
+                    <h5 class="black-text">About</h5>
+                    <a href="" class="grey-text">Blog</a>
+                    <br>
+                    <a href="" class="grey-text">Pricing</a>
+                    <br>
+                    <a href="" class="grey-text">Docs</a>
+                </div>
+                <div class="col s12 m3">
+                    <h5 class="black-text">Connect</h5>
+                    <a href="" class="grey-text">Community</a>
+                    <br>
+                    <a href="" class="grey-text">Subscribe</a>
+                    <br>
+                    <a href="" class="grey-text">Email</a>
+                </div>
+                <div class="col s12 m3">
+                    <h5 class="black-text">Contact</h5>
+                    <a href="" class="grey-text">Facebook</a>
+                    <br>
+                    <a href="" class="grey-text">Twitter</a>
+                    <br>
+                    <a href="" class="grey-text">Github</a>
+                </div>
                 
             </div>
         </div>
-        <div style="height: 1000px;"></div>
+        <div class="footer-copyright white">
+            <div class="container black-text">
+                <span class="grey-text">© 2014 Copyright Text</span>
+                <a class="grey-text right" href="#!">More Links heregit</a>
+            </div>
+        </div>
+    </footer>
 
-
-    <!-- Jquery CDN -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- Compiled and minified JavaScript -->
+    <!-- jquery link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/11d13cee1d.js" crossorigin="anonymous"></script>
+    <!-- materialize js link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- canva and chart js -->
     <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
     <script src="js/chart.js"></script>
-            
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav({
+                edge: "left",
+                inDuration: 300,
+                outDuration: 300
+            });
+            $('.collapsible').collapsible();
+        });
+    </script>
 </body>
 </html>

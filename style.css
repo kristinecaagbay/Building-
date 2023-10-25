@@ -1,17 +1,27 @@
 .dashboard-title {
-    
-    font-weight: 0;
+    font-weight: 500;
+}
+
+a, .footer-text {
+    font-weight: 100;
+    font-size: small;
 }
 
 .card-value {
-    font-weight: 100;
+    font-weight: 200;
+    font-size: 22px;
 }
 
-.fa-chevron-up {
-    margin-right: 5px;
+.custom-badge {
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
 }
 
-.fa-chevron-down {
-    margin-right: 5px;
+.sidenav-logo {
+    padding-top: 18px;
 }
 
+.arrow-drop {
+    margin-left: 10px;
+}
